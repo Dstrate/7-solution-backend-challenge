@@ -1,0 +1,11 @@
+# Binaries
+*.exe
+*.out
+*.dll
+# Build artifacts
+bin/
+# IDE
+.vscode/
+.idea/
+# Environment variables
+.env

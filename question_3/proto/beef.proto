@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package beef;
+option go_package = "beef/proto";
+
+message BeefSummaryRequest {}
+message BeefSummaryResponse {
+    map<string, int64> beef = 1;
+}
+
+service BeefService {
+    rpc BeefSummaryService(BeefSummaryRequest) returns(BeefSummaryResponse);
+}
