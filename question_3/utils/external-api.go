@@ -10,7 +10,7 @@ import (
 func RequestExternalApi(url string) (io.ReadCloser, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return nil, fmt.Errorf("error opening file: %w", err)
+		return nil, fmt.Errorf("%w", err)
 	}
 
 	return resp.Body, nil
